@@ -128,23 +128,6 @@ static         GET      /static/<path:filename>
 tentang        GET      /tentang               
 ```
 
-## Dokumentasi (Screenshot)
-
-Simpan screenshot hasil pengujian ke folder `screenshots/` lalu
-tautkan di sini, contoh:
-
-```
-screenshots/
-├── 01-beranda.png        -> halaman / dan /beranda
-├── 02-cek-username.png   -> /cek/andi, /cek/zaki, /cek/ab (400)
-├── 03-profil-user.png    -> /user/admin, /user/tidakada (404)
-├── 04-detail-produk.png  -> /produk/1, /produk/99 (404)
-├── 05-redirect.png       -> /home (302 ke beranda)
-└── 06-error-404.png      -> custom halaman 404
-```
-
-![Beranda](screenshots/01-beranda.png)
-
 ## Push ke GitHub
 
 ```bash

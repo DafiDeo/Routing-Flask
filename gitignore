@@ -5,3 +5,4 @@ __pycache__/
 .flaskenv
 instance/
 .DS_Store
+.

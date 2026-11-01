@@ -16,7 +16,7 @@ def validasi_username(username):
         return "Username minimal 4 karakter."
     return None
 
-# 1. ROUTE STATIS (minimal 4 halaman)
+# 1. ROUTE STATIS (dengan minimal 4 halaman)
 @app.route("/")
 @app.route("/beranda")              
 def beranda():
