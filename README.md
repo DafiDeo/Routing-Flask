@@ -4,15 +4,6 @@ Aplikasi Flask sederhana **Toko Kampus** untuk pengecekan username
 pelanggan / member / admin toko. Dibuat sesuai materi **Pertemuan 9 —
 Routing di Flask**.
 
-## Identitas
-
-| | |
-|---|---|
-| Nama | *(isi nama Anda)* |
-| NIM | *(isi NIM Anda)* |
-| Kelas / Mata Kuliah | *(isi kelas)* — Pemrograman Web |
-| Studi Kasus | Username pelanggan / member / admin Toko Kampus |
-
 ## Konsep yang Digunakan (Materi Pertemuan 9)
 
 - **Routing** — memetakan URL yang diminta pengguna ke *view function*;
