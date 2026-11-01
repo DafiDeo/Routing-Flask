@@ -50,12 +50,25 @@ tugas-individu-5/
 ## Cara Menjalankan
 
 ```bash
+python -m pip install flask
+python -m flask --version
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-flask --app app run --debug
-# atau
+.\venv\Scripts\Activate.ps1
+python -m pip install flask
+python app.py
+```
+## Di kali Linux
+```bash
+sudo apt update
+sudo apt install python3 python3-pip python3-venv -y
+# Periksa versi Python
+python3 --version
+pip3 --version
+git clone https://github.com/DafiDeo/Routing-Flask.git
+cd Routing Flask
+python3 -m venv venv
+source venv/bin/activate
+python -m pip install -r requirements.txt
 python app.py
 ```
 
