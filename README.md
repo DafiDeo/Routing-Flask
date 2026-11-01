@@ -137,4 +137,5 @@ git commit -m "Tugas Individu 5 - Routing di Flask"
 git branch -M main
 git remote add origin https://github.com/<username-anda>/tugas-individu-5.git
 git push -u origin main
+git status
 ```
