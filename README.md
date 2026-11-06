@@ -5,9 +5,6 @@ pelanggan / member / admin toko. Dibuat sesuai materi **Pertemuan 9 —
 Routing di Flask** dan dilengkapi **Pertemuan 10 — Template di Flask
 (Jinja2)** dengan template inheritance.
 
-## Deskripsi
-Ini hanya cobaan aja
-
 ## Konsep yang Digunakan (Materi Pertemuan 9 — Routing)
 
 - **Routing** — memetakan URL yang diminta pengguna ke *view function*;
