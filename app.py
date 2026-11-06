@@ -1,6 +1,5 @@
+from flask import Flask, abort, redirect, url_for, request, render_template
 app = Flask(__name__)
-
-# ==================== DATA ====================
 
 # Daftar username yang sudah terdaftar di toko (pelanggan/member/admin)
 TERDAFTAR = ["andi", "budi", "citra", "dewi", "admin", "member1"]
