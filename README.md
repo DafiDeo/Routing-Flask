@@ -1,8 +1,9 @@
-# Tugas Individu 5 (Bagian 1) — Routing di Flask
+# Tugas Individu 5 — Final & Demo (Routing & Template di Flask)
 
 Aplikasi Flask sederhana **Toko Kampus** untuk pengecekan username
 pelanggan / member / admin toko. Dibuat sesuai materi **Pertemuan 9 —
-Routing di Flask**.
+Routing di Flask** dan dilengkapi **Pertemuan 10 — Template di Flask
+(Jinja2)** dengan template inheritance.
 
 ## Deskripsi
 Ini hanya cobaan aja
