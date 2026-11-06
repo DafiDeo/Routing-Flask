@@ -5,8 +5,6 @@ pelanggan / member / admin toko. Dibuat sesuai materi **Pertemuan 9 —
 Routing di Flask** dan dilengkapi **Pertemuan 10 — Template di Flask
 (Jinja2)** dengan template inheritance.
 
-**Repo:** https://github.com/DafiDeo/Routing-Flask
-
 ## Deskripsi
 Ini hanya cobaan aja
 
