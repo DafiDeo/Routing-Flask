@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Beranda — Toko Kampus{% endblock %}
+
+{% block content %}
+  <h1 class="mb-2">Selamat Datang di Toko Kampus</h1>
+  <p class="lead">Cek ketersediaan username pelanggan / member / admin toko,
+     dan lihat menu makanan &amp; minuman kampus.</p>
+
+  <div class="row g-3 my-3">
+    <div class="col-md-4">
+      <div class="card h-100 p-3">
+        <h5>{{ produk | length }} Produk Terdaftar</h5>
+        <p class="text-muted">Filter <code>length</code> menghitung jumlah item list.</p>
+        <a class="btn btn-danger btn-sm mt-auto" href="{{ url_for('produk') }}">Lihat Daftar Produk</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-3">
+        <h5>{{ terdaftar | length }} Username Terdaftar</h5>
+        <p class="text-muted">Cek username Anda sebelum mendaftar member.</p>
+        <a class="btn btn-danger btn-sm mt-auto" href="{{ url_for('cek_username', username='andi') }}">Contoh Cek Username</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 p-3">
+        <h5>Via Query String</h5>
+        <p class="text-muted">Versi lain: <code>/cek?u=nama</code> — diarahkan dengan
+        <code>redirect(url_for(...))</code>.</p>
+        <a class="btn btn-outline-danger btn-sm mt-auto" href="{{ url_for('cek_query', u='budi') }}">Cek via Query String</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-muted small">URL lama <code>/home</code> dialihkan otomatis ke beranda:
+  <a href="{{ url_for('home_lama') }}">{{ url_for('home_lama') }}</a></p>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Tentang — Toko Kampus{% endblock %}
+
+{% block content %}
+  <h1>Tentang Kami</h1>
+  <p>Toko Kampus adalah toko milik mahasiswa yang menjual makanan dan
+     minuman ringan di lingkungan kampus.</p>
+  <p>Anggota toko memiliki akun dengan username unik — untuk pelanggan,
+     member, maupun admin. Ketersediaan username dapat diperiksa melalui
+     halaman <a href="{{ url_for('produk') }}">produk</a> dan fitur
+     pengecekan username.</p>
+  <a class="btn btn-outline-danger" href="{{ url_for('beranda') }}">&larr; Kembali ke beranda</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ p.nama }} — Toko Kampus{% endblock %}
+
+{% block content %}
+  <div class="card p-4" style="max-width: 28rem;">
+    <p class="text-muted mb-1">Detail Produk #{{ id }}</p>
+    <h2>{{ p.nama | title }}</h2>
+    <p class="fs-4 text-danger fw-semibold">Rp{{ "{:,}".format(p.harga) }}</p>
+    <a class="btn btn-outline-danger" href="{{ url_for('produk') }}">&larr; Kembali ke daftar produk</a>
+  </div>
+{% endblock %}

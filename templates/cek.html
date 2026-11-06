@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Cek Username — Toko Kampus{% endblock %}
+
+{% block content %}
+  <h1>Hasil Cek Username</h1>
+
+  {# =========================================================
+     {% if %} dengan 3 kondisi (requirement Bagian 2):
+     1. tidak valid (username kurang dari 4 karakter)
+     2. tersedia (valid dan belum terdaftar)
+     3. sudah dipakai (valid tapi sudah terdaftar)
+     ========================================================= #}
+  {% if not valid %}
+    <div class="alert alert-warning">
+      <strong>{{ username }}</strong> &mdash; Username tidak valid,
+      minimal 4 karakter.
+    </div>
+  {% elif tersedia %}
+    <div class="alert alert-success">
+      Username <strong>{{ username }}</strong> <em>tersedia</em>.
+      Silakan daftar jadi member!
+    </div>
+  {% else %}
+    <div class="alert alert-danger">
+      Username <strong>{{ username }}</strong> <em>sudah dipakai</em>.
+      Coba username lain.
+    </div>
+  {% endif %}
+
+  <a class="btn btn-outline-danger" href="{{ url_for('beranda') }}">&larr; Kembali ke beranda</a>
+{% endblock %}

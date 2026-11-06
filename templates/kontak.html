@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Kontak — Toko Kampus{% endblock %}
+
+{% block content %}
+  <h1>Kontak Kami</h1>
+  <ul class="list-group" style="max-width: 26rem;">
+    <li class="list-group-item"><strong>Email :</strong> toko@untag-sby.ac.id</li>
+    <li class="list-group-item"><strong>WA&nbsp;&nbsp;&nbsp;:</strong> 0812-3456-7890</li>
+    <li class="list-group-item"><strong>Alamat :</strong> Gedung Mahasiswa, Kampus</li>
+  </ul>
+  <a class="btn btn-outline-danger mt-3" href="{{ url_for('beranda') }}">&larr; Kembali ke beranda</a>
+{% endblock %}

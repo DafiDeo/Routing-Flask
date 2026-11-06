@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Profil {{ username | title }} — Toko Kampus{% endblock %}
+
+{% block content %}
+  <h1>Profil {{ username | title }}</h1>
+  <ul class="list-group" style="max-width: 26rem;">
+    <li class="list-group-item"><strong>Username :</strong> {{ username }}</li>
+    <li class="list-group-item">
+      <strong>Status :</strong>
+      <span class="badge bg-success">{{ role | upper }}</span> (terdaftar)
+    </li>
+  </ul>
+
+  <h5 class="mt-4">Member lain yang terdaftar ({{ terdaftar | length }} orang)</h5>
+  {# {% for %} + filter: tampilkan member lain kecuali yang sedang dilihat #}
+  <ul>
+    {% for u in terdaftar %}
+      {% if u != username %}
+      <li>
+        <a href="{{ url_for('profil', username=u) }}">{{ u | title }}</a>
+        {%- if loop.last %} &mdash; data terakhir (loop.last){% endif %}
+      </li>
+      {% endif %}
+    {% else %}
+      <li class="text-muted">Belum ada member terdaftar.</li>
+    {% endfor %}
+  </ul>
+
+  <a class="btn btn-outline-danger mt-3" href="{{ url_for('beranda') }}">&larr; Kembali ke beranda</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}404 — Toko Kampus{% endblock %}
+
+{% block content %}
+  <div class="text-center py-5">
+    <h1 class="display-1 fw-bold text-danger">404</h1>
+    <p class="lead">Maaf, halaman atau data yang Anda cari tidak ada.</p>
+    <p class="text-muted">Halaman error ini juga memakai template:
+    <code>404.html</code> extends <code>base.html</code>.</p>
+    <a class="btn btn-danger" href="{{ url_for('beranda') }}">Kembali ke beranda</a>
+  </div>
+{% endblock %}
